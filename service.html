@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRICING section </title>
+   
+    <style>
+a:link {
+ padding: 15px 10px;
+ text-align: center;
+ text-decoration:none;
+ display: inline-block;
+ box-sizing:border-box;
+}
+a:visited{
+ color: #EBEDEF; 
+}
+/* change the link color on hover */
+#navbar a:hover {
+ background-color:black;
+ color:red;
+ border-radius:1px;
+ box-sizing:border-box;
+}
+#navbar {
+ display: flex;
+ width:97%;
+ margin-left: 10px;
+ text-align: center;
+ background-color:red;
+ font-display:white;
+ text-align:left;
+ padding:1px;
+ position:fixed;
+ display:block;
+ font-size: 22px;
+}
+
+
+
+#nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: red;
+}
+
+
+vl{
+  border-left: 10px solid black;
+  color: black;
+  font-size: 30px;
+}
+.fa-user{
+  color: black;
+  align-items: right;
+  justify-self: right;
+}
+
+input[type=search] {
+  border: 1px solid #000;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 8px 0px;
+  margin-top: 15px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+                
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-top: 1em;
+            margin-bottom: 0;
+        }
+
+        .text-accent {
+            color:red;
+            margin-top: 2em;
+        }
+
+        .fs-500 {
+            font-size: 1.3125rem;
+            margin: 0;
+        }
+
+        .mb {
+            margin-bottom: 0.5em;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2em 0;
+        }
+
+        .plan {
+            width: 19.5rem;
+            padding: 2em;
+            border-radius: 1em;
+            margin: 0 0.5em 1em;
+        }
+
+        .plan--light {
+            color: #4E4E4E;
+            background: linear-gradient(-45deg, #E5E3E8, #FAFAFA);
+        }
+
+        .plan--light .plan-price {
+            color: red;
+        }
+
+        .plan--light .btn {
+            color: white;
+            background: red;
+        }
+
+        .plan--accent {
+            color: #FFF;
+            background: linear-gradient(-45deg, #00A1AB, #3741A0);
+        }
+
+        .plan--accent .btn {
+            color: white;
+            background: red;
+        }
+
+        .plan-title {
+            text-transform: uppercase;
+            margin: 0 0 1em;
+        }
+
+        .plan-price {
+            margin: 0;
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 900;
+        }
+
+        .plan-price span {
+            display: block;
+            font-size: 1.5625rem;
+            font-weight: 300;
+        }
+
+        .plan-description {
+            margin: 2em 0;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5em 0.75em;
+            border-radius: 0.25em;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 700;
+            color:red;
+            background: #00A1AB;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            opacity: 0.7;
+        }
+
+        .btn-mb {
+            margin-bottom: 3em;
+        }
+
+        .btn--light {
+            color: red;
+            background: #FFF;
+        }
+
+        .btn--dark {
+            color: #FFF;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <ul id="nav-list">
+             <li><a href="C:\Users\DC\OneDrive\Desktop\Project\Project.html"> HOME</a></li>
+            <div class="dropdown">
+             <li><a href="#">INVERTER/HOMR UPS</a></li>
+              <div class="dropdown-content">
+              <a href="C:\Users\DC\OneDrive\Desktop\Project\sinewave.html">SINE WAVE UPS</a>
+              <a href="C:\Users\DC\OneDrive\Desktop\Project\sinewave.html">SQUARE WAVA UPS</a>
+              </div>
+           </div>
+           <div class="dropdown">
+            <li><a href="#">INVERTER BATTERY</a></li>
+            <div class="dropdown-content">
+             <a href="C:\Users\DC\OneDrive\Desktop\Project\short tubular.html">SHORT TUBULAR</a>
+             <a href="C:\Users\DC\OneDrive\Desktop\Project\Tall Tubular.html">TALL TUBULAR </a>
+            </div>
+           </div>
+           <div class="dropdown">
+           <li><a href="#">MORE</a></li>
+            <div class="dropdown-content">
+             <a href="#">TROLLEY</a>
+             <a href="#">UPS BATTERY</a>
+             <a href="#">SERVICE</a>
+            </div>
+           </div>&nbsp; &nbsp; &nbsp; &nbsp;
+            <li>
+             <img src="images/telephone.png"><a href="tel:7448010880">7449010880</a>
+            </li>
+           <li>
+             <a href="C:\Users\DC\OneDrive\Desktop\Project\blogs.html">BLOGS</a>
+           </li>
+           </ul>
+          </nav>
+          <br>
+        <h1 class="text-accent">AMC SERVICE</h1>
+        <p class="fs-500">Annual Maintaince Charges</p>
+        <div class="plans flow-content">
+            <div class="plan plan--light">
+                <h2 class="plan-title">basic</h2>
+                <p class="plan-price">$450/-<span>/year</span></p>
+                <p class="plan-description">
+                    Only services Covered. All Spares Chargeable.
+                    (2months once=total 4 service)
+                </p>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+
+            <div class="plan plan--accent">
+                <h2 class="plan-title">premium</h2>
+                <p class="plan-price">$999/-<span>/year</span></p>
+                <p class="plan-description">
+                    All spares *(Except Wound Components) & Services are covered
+                    (3months once=total 4 service.)
+                </p>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+
+            <div class="plan plan--light">
+                <h2 class="plan-title">super</h2>
+                <p class="plan-price">$750/-<span>/year</span></p>
+                <p class="plan-description">
+                    All spares *(Except Wound Components & power Devices) & Services are covered.
+                    (4months once=total 3 service.)
+                </p>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+        </div>
+        <p class="fs-500 mb">Need something different? No problem!</p>
+        <a href="#" class="btn btn-mb">Get in touch</a>
+    </body>
+</body>
+</html>

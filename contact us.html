@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Contact us Page</title>
+    <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        * {
+          
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+a:link {
+padding: 15px 15px;
+text-align: center;
+text-decoration:none;
+display: inline-block;
+box-sizing:border-box;
+color: white;
+}
+a:visited{
+  color: #EBEDEF;
+  
+}
+/* change the link color on hover */
+#navbar a:hover {
+background-color:black;
+color:red;
+border-radius:1px;
+box-sizing:border-box;
+
+}
+#navbar {
+display: flex;
+width:95%;
+margin-left: 10px;
+text-align: center;
+background-color:red;
+font-display:white;
+text-align:left;
+padding:1px;
+position:fixed;
+font-size: 22px;
+}
+#nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: red;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 8px 0px;
+  margin-top: 15px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+        body {
+            min-height:90vh;
+            width: 95%;            
+            background-image: url(https://img.freepik.com/free-photo/audio-headset-used-by-call-center-agents-help-clients-telecommunication-with-technology-empty-customer-service-workstation-with-headphones-computers-modern-gadgets_482257-40834.jpg?size=626&ext=jpg&ga=GA1.1.1002669266.1685281454&semt=ais); background-repeat: no-repeat;
+            background-attachment: fixed;  
+  background-size: cover;
+
+        }
+
+        body::after {
+
+            left: 0;
+            height: 100%;
+            width: 85%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .main-section {
+        
+            z-index: 1;
+            padding-top: 70px;
+            padding-bottom: 20px;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin-left: 50px;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .main-section-header {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .main-section-header h2 {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .main-section-header p {
+            color: #FFF;
+        }
+
+        .main-row {
+            display: flex;
+            
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .contact-info-section {
+            width: 50%;
+        }
+
+        .contact-info-item {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .contact-info-icon {
+            height: 70px;
+            width:70px;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 50%;
+        }
+
+        .contact-info-icon i {
+            font-size: 30px;
+            line-height: 70px;
+        }
+
+        .contact-info-content {
+            margin-left: 10px;
+        
+        }
+
+        .contact-info-content h4 {
+            color: red;
+            font-size: 1.4em;
+            margin-bottom: 5px;
+        }
+
+        .contact-info-content p {
+            color: #FFF;
+            font-size: 1em;
+        }
+
+        .contact-form-section {
+            background-color: #fff;
+            padding: 40px;
+            width: 50%;
+            margin-right: 50px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .contact-form-section h2 {
+            font-weight: bold;
+            font-size: 2em;
+            margin-right: 50px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .input-container {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .input-container input,
+        .input-container textarea {
+            width: 90%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+
+        .input-container span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+
+        .input-container input:focus~span,
+        .input-container textarea:focus~span {
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-25px);
+        }
+      
+        .input-container input[type="submit"] {
+            width: 100%;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+            b{order: 1px solid #12d400;
+            transition: 0.5s;
+        }
+    }
+        .input-container input[type="submit"]:hover {
+            background: black;
+            color: red;
+        }
+       
+
+        @media (max-width: 991px) {
+            .main-section {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            .main-row {
+                flex-direction: column;
+            }
+
+            .contact-info-section {
+                margin-bottom: 40px;
+                width: 100%;
+                
+            }
+
+            .contact-form-section {
+                width: 100%;
+            }
+        }
+</style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul id="nav-list">
+      <li><a href="file:///C:/Users/DC/Desktop/Project/Project.html"> HOME</a></li>
+      <div class="dropdown">
+      <li><a href="#">INVERTER/HOMR UPS</a></li>
+      <div class="dropdown-content">
+        <a href="C:\Users\DC\Desktop\Project\sinewave.html">SINE WAVE UPS</a>
+        <a href="C:\Users\DC\Desktop\Project\squarewave.html">SQUARE WAVA UPS</a>
+        </div>
+        </div>
+      <div class="dropdown">
+      <li><a href="file:///C:/Users/DC/Desktop/Project/car1.html">INVERTER BATTERY</a></li>
+      <div class="dropdown-content">
+        <a href="C:\Users\DC\Desktop\Project\short tubular.html">SHORT TUBULAR</a>
+        <a href="C:\Users\DC\Desktop\Project\Tall Tubular.html">TALL TUBULAR </a>
+        </div>
+        </div>
+      <div class="dropdown">
+      <li><a href="file:///C:/Users/DC/Desktop/Project/contact.html">MORE</a></li>
+      <div class="dropdown-content">
+        <a href="#">TROLLEY</a>
+        <a href="#">UPS BATTERY</a>
+        <a href="#">Link 3</a>
+        </div>
+        </div>&nbsp; &nbsp; &nbsp; &nbsp;
+        <li>
+      <img src="images/telephone.png"><a href="#">7449010880</a>
+      
+      </li>
+      <li>
+        <a href="C:\Users\DC\Desktop\Project\blogs.html">BLOGS</a>
+      </li>
+      </ul>
+</nav>
+    <div class="main-section">
+        <div class="main-section-header">
+            <div class="main-container">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="main-row">
+
+                <div class="contact-info-section">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h4>Address</h4>
+                            <p>Puzhal, Chennai<br /> india </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:7449010880">7449010880</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h4>Email</h4>
+                            <p>powersolution@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <form action="" id="contact-form">
+                        <h2>Send Message</h2>
+                        <div class="input-container">
+                            <input type="text" required="true" name="">
+                            <span>Full Name</span>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="email" required="true" name="">
+                            <span>Email</span>
+                        </div>
+
+                        <div class="input-container">
+                            <textarea required="true" name=""></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="submit" value="Send" name="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>
